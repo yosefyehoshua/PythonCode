@@ -1,0 +1,40 @@
+import csv
+def totParkSpots(file):
+    areaList = [0 for i in range(50)]
+    countList = [0 for i in range(100000)]
+    with open(file, 'r') as f:
+        reader = csv.reader(f)
+        for row in reader:
+            if row[1] != "DeviceId":
+                if countList[int(row[1])] == 0:
+                    countList[int(row[1])] += 1
+                    areaList[int(row[5])] += 1
+
+    data = [["area", "no. of park_space"]]
+    for i in range(len(areaList)):
+
+        if areaList[i] != 0:
+            data.append([str(i), str(areaList[i])])
+            print("in area: " + str(i) + " there is: " + str(
+                areaList[i]) + " parkings spots")
+
+    print(data)
+    sums = 0
+    for i in range(len(data)):
+        if i != 0:
+            sums += int(data[i][1])
+
+    with open('constrationPerArea.csv', 'w') as g:
+
+        newCsv = csv.writer(g)
+        newCsv.writerows(data)
+
+    return sums
+
+
+sums = totParkSpots("outfileFull.csv")
+print(sums)
+
+
+
+

@@ -1,0 +1,59 @@
+===================
+= README for ex9: =
+===================
+
+yosef12345
+302818513
+Yosef Yehoshua
+
+================
+= Description: =
+================
+
+A program that imitate the article networks of WikiPedia
+using Page algorithm, jacarrd indexing and other known
+algorithms
+
+==========================
+= exercise 10 questions: =
+==========================
+
+first three articles in page_rank (from left to right):
+‘United_States', 'France', 'Europe’.
+
+secound highest “jacarrd index” for:
+"United_Kingdom” ——> 'Scotland'
+"Israel"         ——> 'Yemen'
+"United_States"  ——> 'Driving_on_the_left_or_right'
+"Algebra"        ——> 'Calculus'
+"World_War_II"   ——> 'Adolf_Hitler’
+
+all article in depth 1 from “Christopher_Columbus” (percentage):
+0.9172308364271675
+
+all article in depth 2 from “DNA” (percentage):
+13.758462546407513
+
+all article in depth 3 from “History” (percentage):
+61.694693164446385
+
+=====================
+= special comments: =
+=====================
+
+Harel Assaag
+Danny Novikov
+Yair Tocatly
+Eytan Ackermann
+Keren Meron
+Eldan chodorov
+Nofar Erez
+Alon Cohen
+
+Web pages that were helpful:
+http://stackoverflow.com
+https://docs.python.org
+http://www.tutorialspoint.com
+https://docs.python.org/2/library/xml.etree.elementtree.html
+https://en.wikipedia.org/wiki/PageRank
+

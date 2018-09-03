@@ -1,0 +1,84 @@
+===================
+= README for ex9: =
+===================
+
+yosef12345
+302818513
+Yosef Yehoshua
+
+yoav.galtzur
+203372511
+Yoav Galtzur
+
+================
+= Description: =
+================
+
+A game of 'Asteroids'.
+The code is consistent of 5 different classes, each responsible of a
+different aspect in the game:
+
+Ship (filename: ship.py) - Represents a ship in the game of 'Asteroids'.
+Attributes: Screen coordinates, Radius, Speed, Position, lives, angle.
+Methods: getters (for position, speed, angle, no. of lives),
+setters(for angle, speed, position) and methods in charge of acceleration,
+losing lives, and check if dead
+
+Asteroids (filename: asteroid.py) - Represents an asteroid in the game of
+'Asteroids'.
+Attributes: Screen coordinates, Radius, Speed, Position, size, angle.
+Methods: getters (for position, speed, angle, size),
+setters(for angle, speed, position) and methods in charge of acceleration,
+check intersection with another object
+
+Torpedo (filename: torpedo.py) - Represents an torpedo in the game of
+'Asteroids'.
+Attributes: Screen coordinates, Radius, Speed, Position, size, angle.
+Methods: getters (for position, speed, angle, life span),
+setters(for angle, speed, position) and methods in charge of acceleration,
+losing lives, and check if dead
+
+GameRunner (filename: asteroids_main.py) - Managing a game of 'Asteroids'.
+Attributes: Screen coordinations, asteroids amount to star with,
+the ship in the game, list of asteroids, list of torpedo, score.
+Functionality: Creating asteroids, sub-asteroids, ship and torpedo.
+Moving ship, torpedoes and asteroids.
+Checking for intersections and conditions for game ending.
+Updating the GUI and the score
+Running the game and operating the game loop.
+
+Helper (filename: asteroids_helper.py) - helper class, containing functions
+relevant to multiple parts of the program.
+Methods - set new position (of all objects in the game)
+according to the old position and the speed.
+Converting angles to radians
+
+=====================
+= special comments: =
+=====================
+
+We discussed the exercise with:
+No one
+
+Web pages we consulted with:
+https://docs.python.org/2/library/random.html
+https://docs.python.org/2/tutorial/controlflow.html
+
+Three conflicts we had while writing the program:
+1. Import Screen - in the program, the 'Screen' classes is imported only in
+'asteroids_main'.
+Therefore, the __init__ method in every the classes Asteroid, Torpedo and Ship
+should get the screen coordinates from outside.
+That makes the creating of an object a bit more cumbersome.
+On the other hand, we thought that it's better since it maintains the position
+of the class GameRunner as the only connection to the GUI.
+2. The Helper class - We thought the creating an helper class containing the
+methods above is an elegant way to prevent code duplication. Although it makes
+some functions in the program, again, a bit more cumbersome.
+3. Give an Advantage to the ship - In every iteration, for each asteroid,
+the program checks and deals with intersections with torpedoes before
+intersections with ship. This gives the player an advantage in the edge case
+that a torpedo and a ship intersected with the same asteroid - the asteroid
+will be destroyed and the ship will not lose life. There are a few
+alternatives to handle with this edge case (like destroying the ship),
+but we wanted to give a certain advantage to the user.

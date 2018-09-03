@@ -1,0 +1,75 @@
+===================
+= README for ex12: =
+===================
+
+yosef12345
+302818513
+Yosef Yehoshua
+
+yoav.galtzur
+203372511
+Yoav Galtzur
+
+================
+= Description: =
+================
+
+This is it! the exercise we’ve all been waiting for students, teachers,
+tsars, and of course, you.
+in this ex the assignment was to program a social drawing board, a program
+that helps you share your paintings and even paint one with your friend online.
+to make it possible we've built 4 classes:
+
+class DrawingBoard:
+this class will manage the builtin GUI we work with
+class Shape:
+a more passive class, to make the shapes we're drawing
+simpler and easy to read, this class is merely composed of getters.
+class Client:
+this class will represent a client in this program, it will basically manage
+all the communication with the server by sending & receiving massages
+to and from it. Also, it will contain the personal GUI of each user.
+
+class AppManager:
+this class is in charge of managing the operation of the drawing board,
+initiating the communication with the server, the GUI and binding events.
+
+=====================
+= special comments: =
+=====================
+
+Input Validation:
+We've chosen to check to validity of the user's input before initiating the
+GUI. In our view, this prevents a future problems and simplifies the code,
+even though the 'server.py' code contains similar input tests.
+
+Images:
+We're using 4 images for the buttons:
+line.png
+triangle.png
+rectangle.png
+oval.png
+(these files are included in the submission)
+
+We discussed the exercise with:
+No one
+
+Web pages we consulted with:
+http://www.python-course.eu/tkinter_text_widget.php
+http://www.python-course.eu/tkinter_message_widget.php
+http://www.python-course.eu/tkinter_radiobuttons.php
+http://www.python-course.eu/tkinter_text_widget.php
+http://www.python-course.eu/tkinter_canvas.php
+http://www.python-course.eu/tkinter_layout_management.php
+http://www.python-course.eu/tkinter_menus.php
+http://www.python-course.eu/tkinter_events_binds.php
+http://www.tutorialspoint.com/python/tk_frame.htm
+http://www.python-course.eu/tkinter_dialogs.php
+http://effbot.org/tkinterbook/optionmenu.htm
+https://www.reddit.com/r/learnpython/comments/2wn1w6/how_to_create_a_drop_down_list_using_tkinter/
+http://effbot.org/tkinterbook/listbox.htm
+http://effbot.org/tkinterbook/scrollbar.htm
+http://effbot.org/tkinterbook/tkinter-dialog-windows.htm
+https://docs.python.org/2/library/select.html
+http://effbot.org/tkinterbook/tkinter-standard-dialogs.htm
+https://docs.python.org/3.5/howto/regex.html#matching-characters

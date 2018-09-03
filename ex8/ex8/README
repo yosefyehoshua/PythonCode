@@ -1,0 +1,135 @@
+yosef12345
+302818513
+Yosef Yehoshua
+
+===============================================
+=  README for ex7:                            =
+===============================================
+
+
+===============================================
+=  Functions in ex7.py:                       =
+=  print_to_n                                 =
+=  print_reversed_n                           =
+=  has_divisor_smaller_than                   =
+=  is_prime                                   =
+=  list_of_divisor_smaller_than               =
+=  divisors                                   =
+=  factorial                                  =
+=  exp_n_x                                    =
+=  play_hanoi                                 =
+=  print_binary_sequences_with_prefix         =
+=  print_binary_sequences                     =
+=  print_sequences_helper                     =
+=  print_sequences                            =
+=  print_no_repetition_sequences_helper       =       
+=  print_no_repetition_sequences              =
+=  no_repetition_sequences_list_helper        =
+=  no_repetition_sequences_list               =
+=============================================== 
+
+
+==================
+=  Description:  =
+==================
+
+In this file you will find 17 functions that
+calculate and solve problems using recursive
+programming.
+
+
+=========================
+= functions description = 
+=========================
+functions in ex7.py:
+
+Linear recursion functions:
+
+1)  print_to_n:
+    a function that gets an int prints integers in arising
+    order from 1 to n.		
+
+2)  print_reversed_n:
+    a function that gets an int prints integers in decreasing
+    order from n to 1.                                                
+
+3)  has_divisor_smaller_than:
+    a function that returns True/False if there is a divisor for n that 
+    smaller that i.        
+ 
+4)  is_prime:
+    a function that returns a boolean value if n is a prime number, using
+    has_divisor_smaller_than.
+
+5)  list_of_divisor_smaller_than:
+    a function that return a list of the divisors of a given n that are   
+    smaller than i.
+
+6)  divisors:
+    a function that uses list_of_divisor_smaller_than to find all of the 
+    divisors of n and returns a list of that divisors.
+
+7)  factorial:
+    calculate n factorial
+
+8)  exp_n_x:
+    calculate the sum of the exp. expiration '(x^n)/n' as x is the power 
+    base and n is the power & and sum boundary.
+
+Non linear recursion functions:
+
+9)  play_hanoi:
+    solves 'Hanoi Towers' game using its famous algorithm
+    (for more details visit https://en.wikipedia.org/wiki/Tower_of_Hanoi)
+
+10) print_binary_sequences_with_prefix:
+    prints strings with all the possibilities in length 'n' under
+    prefix condition.
+
+11) print_binary_sequences:
+    calls print_binary_sequences_with_prefix function.
+
+12) print_sequences_helper:
+    prints strings with all the possibilities in length 'n' of the values
+    in char_lists that starts under prefix condition.
+
+13) print_sequences:
+    calls print_sequences_helper function.
+
+14) print_no_repetition_sequences_helper:
+    prints all sequences of chars in char_list without repetition from
+    prefix condition and beyond.
+
+15) print_no_repetition_sequences:
+    calls print_no_repetition_sequences_helper and prints all the
+    combinations of char_list's chars without repetition.
+
+16) no_repetition_sequences_list_helper:
+    returns a list of all sequences of chars in char_list without
+    repetition from prefix condition and beyond.
+
+17) no_repetition_sequences_list:
+    calls no_repetition_sequences_list_helper function.
+
+======================
+=  Special Comments  =
+======================
+
+people we've consulted with:
+Harel Assaag
+Danny Novikov
+Yair Tocatly
+Eytan Ackermann
+Keren Meron
+Eldan chodorov
+Nofar Erez
+
+sites the were helpful: 
+http://stackoverflow.com
+https://docs.python.org
+http://www.tutorialspoint.com
+https://docs.python.org/2/library/xml.etree.elementtree.html
+https://en.wikipedia.org/wiki/Tower_of_Hanoi
+
+A great exercise for beginners in learning how to program using recursion.
+
